@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <title>Materialize</title>
+</head>
+<body>
+
+    <!-- BASIC TEXT STYLES -->
+    <div class="container">
+        <h1>h1 title</h1>
+        <h2>h2 title</h2>
+        <h3>h3 title</h3>
+        <h4>h4 title</h4>
+        <h5>h5 title</h5>
+        <h6>h6 title</h6>
+        <p>this is a paragraph</p>
+        <p class="flow-text">this is flow text - resize to see</p>
+    </div>
+
+    <!-- HIDING CONTENT -->
+    <div class="container">
+        <h4 class="hide">Hide me on all screen sizes</h4>
+        <h4 class="hide-on-small-only">Hide me on small screen sizes</h4>
+        <h4 class="hide-on-med-only">Hide me on medium screen sizes</h4>
+        <h4 class="hide-on-large-only">Hide me on large screen sizes</h4>
+        <h4 class="hide-on-med-and-down">Hide me on medium & small screen sizes</h4>
+        <h4 class="hide-on-med-and-up">Hide me on medium and large screen sizes</h4>
+    </div>
+
+    <!-- COLORS -->
+    <div class="container">
+        <h5 class="blue darken-1">Be yourself, everyone else is already taken</h5>
+        <h5 class="orange lighten-4">We are all in the gutter, but some of us are looking at the stars</h5>
+        <h5 class="purple darken-3 white-text">To live is the rares thing in the world. Most people exist, that is all</h5>
+        <h5 class="teal darken-2 yellow-text text-lighten-3">Experience is simply the name we give our mistakes</h5>
+        <h5 class="yellow lighten-3 purple-text text-darken-2">Always forgive your enemies - nothing annoys them so much</h5>
+    </div>
+
+    <!-- TEXT FORMATTING-->
+    <div class="container">
+        <h5 class="center-align">Center alignment</h5>
+        <h5 class="left-align">Left alignment</h5>
+        <h5 class="right-align">Right alignment</h5>
+    </div>
+
+    <div class="container grey lighten-2 box valign-wrapper">
+        <h5 class="">Vertical alignment</h5>
+    </div>
+
+    <div class="container">
+        <p class="truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum eum beatae soluta voluptas ex numquam similique fuga impedit deleniti veniam? Nemo ut assumenda quis beatae ea reiciendis facere voluptate consequuntur.</p>
+    </div>
+
+    <!-- BUTTONS -->
+    <div class="container">
+        <h4>Buttons</h4>
+        <a href="javascript:void(0)" class="btn waves-effect waves-light">Normal button</a>
+        <a href="#" class="btn-small">Small button</a>
+        <a href="#" class="btn-large">Large button</a>
+        <a href="javascript:void(0)" class="btn indigo waves-effect waves-light">Indigo button</a>
+        <a href="#" class="btn disabled">Disabled button</a>
+        <h4>Floating button</h4>
+        <a href="#" class="btn-floating pink pulse"></a>
+        <h4>Other elements</h4>
+        <div>I am a div tag</div>
+    </div>
+
+    <!-- ICONS -->
+    <!-- https://material.io/tools/icons/?style=baseline -->
+    <div class="container">
+        <i class="material-icons red-text">error</i>
+        <i class="material-icons yellow-text text-darken-2">warning</i>
+        <i class="material-icons grey-text">cloud</i>
+        <i class="material-icons blue-text">folder</i>
+
+        <h4>Icons on buttons</h4>
+        <a href="#" class="btn indigo">
+            <span>Send</span>
+            <i class="material-icons right">send</i>
+        </a>
+        <a href="javascript:void(0)" class="btn pink waves-effect waves-light">
+            <span>Email</span>
+            <i class="material-icons left">email</i>
+        </a>
+
+        <h4>Icons on floating buttons</h4>
+        <a href="javascript:void(0)" class="btn-floating blue pulse">
+            <i class="material-icons">add</i>
+        </a>
+        <a href="javascript:void(0)" class="btn-floating red pulse">
+            <i class="material-icons">remove</i>
+        </a>
+        <a href="javascript:void(0)" class="btn-floating orange pulse">
+            <i class="material-icons">edit</i>
+        </a>
+    </div>
+
+    <!-- RESPONSIVE GRID -->
+    <div class="container">
+        <h4>Grids</h4>
+
+        <div class="row">
+            <div class="col s3">content</div>
+            <div class="col s3">content</div>
+            <div class="col s3">content</div>
+            <div class="col s3">content</div>
+        </div>
+        
+        <div class="row">
+            <div class="col s6 m3">content</div>
+            <div class="col s6 m3">content</div>
+            <div class="col s6 m3">content</div>
+            <div class="col s6 m3">content</div>
+        </div>
+        
+        <div class="row">
+            <div class="col s12 m6 l4">content</div>
+            <div class="col s12 m6 l4">content</div>
+            <div class="col s12 m6 l4">content</div>
+            <div class="col s12 m6 l4">content</div>
+            <div class="col s12 m6 l4">content</div>
+            <div class="col s12 m6 l4">content</div>
+        </div>
+        
+        <div class="row">
+            <div class="col s12 m6 l4 xl2">content</div>
+            <div class="col s12 m6 l4 xl2">content</div>
+            <div class="col s12 m6 l4 xl2">content</div>
+            <div class="col s12 m6 l4 xl2">content</div>
+            <div class="col s12 m6 l4 xl2">content</div>
+            <div class="col s12 m6 l4 xl2">content</div>
+        </div>
+        
+        <div class="row">
+            <div class="col s12 m8">content</div>
+            <div class="col s12 m4">content</div>
+            <div class="col s12 m4">content</div>
+            <div class="col s12 m8">content</div>
+        </div>
+    </div>
+
+    <!-- SHADOWS & DEPTH -->
+    <div class="container">
+        <h4>Shadows & Depth</h4>
+    </div>
+
+</body>
+</html>
