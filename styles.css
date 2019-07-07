@@ -6,7 +6,7 @@ h5 {
     height: 200px;
 }
 
-.row > div {
+.row > .custom-1 {
     padding: 10px;
     background: #ddd;
     border: 1px solid #fff;
@@ -15,4 +15,15 @@ h5 {
 
 .row {
     margin: 40px auto;
+}
+
+.col > .custom-2 {
+    background:  lightblue;
+    height: 120px;
+}
+
+nav .badge {
+    position: relative;
+    top: 20px;
+    right: 20px;
 }

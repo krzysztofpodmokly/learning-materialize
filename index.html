@@ -13,12 +13,34 @@
 
     <link rel="stylesheet" href="styles.css">
 
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
     <title>Materialize</title>
 </head>
 <body>
+
+    <!-- NAVBAR & BADGES -->
+    <nav class="nav-wrapper indigo">
+        <div class="container">
+            <a href="#" class="brand-logo">Logo</a>
+            <a href="#" class="sidenav-trigger" data-target="mobile-links">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="btn-floating indigo darken-4 z-depth-0">
+                    <i class="material-icons">notifications</i>
+                </a></li>
+                <li><span class="badge white-text pink new">5</span></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
 
     <!-- BASIC TEXT STYLES -->
     <div class="container">
@@ -115,49 +137,163 @@
         <h4>Grids</h4>
 
         <div class="row">
-            <div class="col s3">content</div>
-            <div class="col s3">content</div>
-            <div class="col s3">content</div>
-            <div class="col s3">content</div>
+            <div class="col s3 custom-1">content</div>
+            <div class="col s3 custom-1">content</div>
+            <div class="col s3 custom-1">content</div>
+            <div class="col s3 custom-1">content</div>
         </div>
         
         <div class="row">
-            <div class="col s6 m3">content</div>
-            <div class="col s6 m3">content</div>
-            <div class="col s6 m3">content</div>
-            <div class="col s6 m3">content</div>
+            <div class="col s6 m3 custom-1">content</div>
+            <div class="col s6 m3 custom-1">content</div>
+            <div class="col s6 m3 custom-1">content</div>
+            <div class="col s6 m3 custom-1">content</div>
         </div>
         
         <div class="row">
-            <div class="col s12 m6 l4">content</div>
-            <div class="col s12 m6 l4">content</div>
-            <div class="col s12 m6 l4">content</div>
-            <div class="col s12 m6 l4">content</div>
-            <div class="col s12 m6 l4">content</div>
-            <div class="col s12 m6 l4">content</div>
+            <div class="col s12 m6 l4 custom-1">content</div>
+            <div class="col s12 m6 l4 custom-1">content</div>
+            <div class="col s12 m6 l4 custom-1">content</div>
+            <div class="col s12 m6 l4 custom-1">content</div>
+            <div class="col s12 m6 l4 custom-1">content</div>
+            <div class="col s12 m6 l4 custom-1">content</div>
         </div>
         
         <div class="row">
-            <div class="col s12 m6 l4 xl2">content</div>
-            <div class="col s12 m6 l4 xl2">content</div>
-            <div class="col s12 m6 l4 xl2">content</div>
-            <div class="col s12 m6 l4 xl2">content</div>
-            <div class="col s12 m6 l4 xl2">content</div>
-            <div class="col s12 m6 l4 xl2">content</div>
+            <div class="col s12 m6 l4 xl2 custom-1">content</div>
+            <div class="col s12 m6 l4 xl2 custom-1">content</div>
+            <div class="col s12 m6 l4 xl2 custom-1">content</div>
+            <div class="col s12 m6 l4 xl2 custom-1">content</div>
+            <div class="col s12 m6 l4 xl2 custom-1">content</div>
+            <div class="col s12 m6 l4 xl2 custom-1">content</div>
         </div>
         
         <div class="row">
-            <div class="col s12 m8">content</div>
-            <div class="col s12 m4">content</div>
-            <div class="col s12 m4">content</div>
-            <div class="col s12 m8">content</div>
+            <div class="col s12 m8 custom-1">content</div>
+            <div class="col s12 m4 custom-1">content</div>
+            <div class="col s12 m4 custom-1">content</div>
+            <div class="col s12 m8 custom-1">content</div>
         </div>
     </div>
 
     <!-- SHADOWS & DEPTH -->
     <div class="container">
         <h4>Shadows & Depth</h4>
+        <div class="row">
+            <div class="col s2">
+                <div class="custom-2"></div>
+            </div>
+            <div class="col s2">
+                <div class="z-depth-1 custom-2"></div>
+            </div>
+            <div class="col s2">
+                <div class="z-depth-2 custom-2"></div>
+            </div>
+            <div class="col s2">
+                <div class="z-depth-3 custom-2"></div>
+            </div>
+            <div class="col s2">
+                <div class="z-depth-4 custom-2"></div>
+            </div>
+            <div class="col s2">
+                <div class="z-depth-5 custom-2"></div>
+            </div>
+        </div>
     </div>
 
+    <!-- CARDS -->
+    <div class="container">
+        <h2>Cards</h2>
+        <div class="row">
+            <div class="col s12 l6">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/curry.jpg" alt="curry">
+                        <a href="#" class="halfway-fab btn-floating large pink pulse">
+                            <i class="material-icons">favorite</i>
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Mango & Chickpea Curry</span>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quis ad voluptas est quas sit natus totam, explicabo neque laudantium amet, sint consequuntur fuga fugit error debitis suscipit ex id!</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">More details</a>
+                        <a href="#">View Ingredients</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 l6">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/pasta.jpg" alt="curry">
+                        <a href="#" class="halfway-fab btn-floating large pink pulse">
+                            <i class="material-icons">favorite</i>
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Rainbow Pasta Salad</span>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quis ad voluptas est quas sit natus totam, explicabo neque laudantium amet, sint consequuntur fuga fugit error debitis suscipit ex id!</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">More details</a>
+                        <a href="#">View Ingredients</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- COLLECTIONS -->
+    <div class="container">
+        <h2>Collections</h2>
+        <ul class="collection with-header">
+            <li class="collection-header"><h4>Customers</h4></li>
+            <li class="collection-item avatar">
+                <i class="material-icons circle blue">person</i>
+                <span class="title">John</span>
+                <p class="grey-text">Black Belt</p>
+                <a href="#" class="secondary-content">
+                    <i class="material-icons blue-text">email</i>
+                </a>
+            </li>
+            <li class="collection-item avatar">
+                <i class="material-icons circle blue">person</i>
+                <span class="title">Crystal</span>
+                <p class="grey-text">Blue Belt</p>
+                <a href="#" class="secondary-content">
+                    <i class="material-icons blue-text">email</i>
+                </a>
+            </li>
+            <li class="collection-item avatar">
+                <i class="material-icons circle blue">person</i>
+                <span class="title">Max</span>
+                <p class="grey-text">Yellow Belt</p>
+                <a href="#" class="secondary-content">
+                    <i class="material-icons blue-text">email</i>
+                </a>
+            </li>
+            <li class="collection-item avatar">
+                <i class="material-icons circle blue">person</i>
+                <span class="title">Ann</span>
+                <p class="grey-text">Brown Belt</p>
+                <a href="#" class="secondary-content">
+                    <i class="material-icons blue-text">email</i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.sidenav').sidenav()
+        });
+    </script>
 </body>
 </html>
