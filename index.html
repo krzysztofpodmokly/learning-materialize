@@ -284,6 +284,23 @@
         </ul>
     </div>
 
+    <!-- MODALS -->
+    <div class="container">
+        <h2>Modals</h2>
+
+        <a href="#terms" class="btn orange modal-trigger">Terms & Conditions</a>
+
+        <div class="modal" id="terms">
+            <div class="modal-content">
+                <h4>Term & Conditions</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate ut autem quae magnam eaque doloremque harum libero labore eos mollitia, unde provident molestiae eius ad accusamus voluptatem voluptatibus sequi praesentium?</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="modal-close btn orange">Agree & Close</a>
+            </div>
+        </div>
+    </div>
+
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
@@ -292,7 +309,8 @@
 
     <script>
         $(document).ready(function() {
-            $('.sidenav').sidenav()
+            $('.sidenav').sidenav();
+            $('.modal').modal();
         });
     </script>
 </body>
