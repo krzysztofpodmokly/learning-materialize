@@ -1,317 +1,222 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
 
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-    <link rel="stylesheet" href="styles.css">
-
-    <title>Materialize</title>
+  <link rel="stylesheet" href="./style.css">
+  <title>Photo Ninja</title>
 </head>
 <body>
 
-    <!-- NAVBAR & BADGES -->
-    <nav class="nav-wrapper indigo">
-        <div class="container">
-            <a href="#" class="brand-logo">Logo</a>
-            <a href="#" class="sidenav-trigger" data-target="mobile-links">
-                <i class="material-icons">menu</i>
+  <!-- navbar -->
+  <header>
+    <nav class="nav-wrapper transparent">
+      <div class="container">
+        <a href="#" class="brand-logo">Logo</a>
+        <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#photos">Photo's</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-tooltip="This is Instagram">
+              <i class="fab fa-instagram"></i>
             </a>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#" class="btn-floating indigo darken-4 z-depth-0">
-                    <i class="material-icons">notifications</i>
-                </a></li>
-                <li><span class="badge white-text pink new">5</span></li>
-            </ul>
-        </div>
-    </nav>
-
-    <ul class="sidenav" id="mobile-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
-
-    <!-- BASIC TEXT STYLES -->
-    <div class="container">
-        <h1>h1 title</h1>
-        <h2>h2 title</h2>
-        <h3>h3 title</h3>
-        <h4>h4 title</h4>
-        <h5>h5 title</h5>
-        <h6>h6 title</h6>
-        <p>this is a paragraph</p>
-        <p class="flow-text">this is flow text - resize to see</p>
-    </div>
-
-    <!-- HIDING CONTENT -->
-    <div class="container">
-        <h4 class="hide">Hide me on all screen sizes</h4>
-        <h4 class="hide-on-small-only">Hide me on small screen sizes</h4>
-        <h4 class="hide-on-med-only">Hide me on medium screen sizes</h4>
-        <h4 class="hide-on-large-only">Hide me on large screen sizes</h4>
-        <h4 class="hide-on-med-and-down">Hide me on medium & small screen sizes</h4>
-        <h4 class="hide-on-med-and-up">Hide me on medium and large screen sizes</h4>
-    </div>
-
-    <!-- COLORS -->
-    <div class="container">
-        <h5 class="blue darken-1">Be yourself, everyone else is already taken</h5>
-        <h5 class="orange lighten-4">We are all in the gutter, but some of us are looking at the stars</h5>
-        <h5 class="purple darken-3 white-text">To live is the rares thing in the world. Most people exist, that is all</h5>
-        <h5 class="teal darken-2 yellow-text text-lighten-3">Experience is simply the name we give our mistakes</h5>
-        <h5 class="yellow lighten-3 purple-text text-darken-2">Always forgive your enemies - nothing annoys them so much</h5>
-    </div>
-
-    <!-- TEXT FORMATTING-->
-    <div class="container">
-        <h5 class="center-align">Center alignment</h5>
-        <h5 class="left-align">Left alignment</h5>
-        <h5 class="right-align">Right alignment</h5>
-    </div>
-
-    <div class="container grey lighten-2 box valign-wrapper">
-        <h5 class="">Vertical alignment</h5>
-    </div>
-
-    <div class="container">
-        <p class="truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum eum beatae soluta voluptas ex numquam similique fuga impedit deleniti veniam? Nemo ut assumenda quis beatae ea reiciendis facere voluptate consequuntur.</p>
-    </div>
-
-    <!-- BUTTONS -->
-    <div class="container">
-        <h4>Buttons</h4>
-        <a href="javascript:void(0)" class="btn waves-effect waves-light">Normal button</a>
-        <a href="#" class="btn-small">Small button</a>
-        <a href="#" class="btn-large">Large button</a>
-        <a href="javascript:void(0)" class="btn indigo waves-effect waves-light">Indigo button</a>
-        <a href="#" class="btn disabled">Disabled button</a>
-        <h4>Floating button</h4>
-        <a href="#" class="btn-floating pink pulse"></a>
-        <h4>Other elements</h4>
-        <div>I am a div tag</div>
-    </div>
-
-    <!-- ICONS -->
-    <!-- https://material.io/tools/icons/?style=baseline -->
-    <div class="container">
-        <i class="material-icons red-text">error</i>
-        <i class="material-icons yellow-text text-darken-2">warning</i>
-        <i class="material-icons grey-text">cloud</i>
-        <i class="material-icons blue-text">folder</i>
-
-        <h4>Icons on buttons</h4>
-        <a href="#" class="btn indigo">
-            <span>Send</span>
-            <i class="material-icons right">send</i>
-        </a>
-        <a href="javascript:void(0)" class="btn pink waves-effect waves-light">
-            <span>Email</span>
-            <i class="material-icons left">email</i>
-        </a>
-
-        <h4>Icons on floating buttons</h4>
-        <a href="javascript:void(0)" class="btn-floating blue pulse">
-            <i class="material-icons">add</i>
-        </a>
-        <a href="javascript:void(0)" class="btn-floating red pulse">
-            <i class="material-icons">remove</i>
-        </a>
-        <a href="javascript:void(0)" class="btn-floating orange pulse">
-            <i class="material-icons">edit</i>
-        </a>
-    </div>
-
-    <!-- RESPONSIVE GRID -->
-    <div class="container">
-        <h4>Grids</h4>
-
-        <div class="row">
-            <div class="col s3 custom-1">content</div>
-            <div class="col s3 custom-1">content</div>
-            <div class="col s3 custom-1">content</div>
-            <div class="col s3 custom-1">content</div>
-        </div>
-        
-        <div class="row">
-            <div class="col s6 m3 custom-1">content</div>
-            <div class="col s6 m3 custom-1">content</div>
-            <div class="col s6 m3 custom-1">content</div>
-            <div class="col s6 m3 custom-1">content</div>
-        </div>
-        
-        <div class="row">
-            <div class="col s12 m6 l4 custom-1">content</div>
-            <div class="col s12 m6 l4 custom-1">content</div>
-            <div class="col s12 m6 l4 custom-1">content</div>
-            <div class="col s12 m6 l4 custom-1">content</div>
-            <div class="col s12 m6 l4 custom-1">content</div>
-            <div class="col s12 m6 l4 custom-1">content</div>
-        </div>
-        
-        <div class="row">
-            <div class="col s12 m6 l4 xl2 custom-1">content</div>
-            <div class="col s12 m6 l4 xl2 custom-1">content</div>
-            <div class="col s12 m6 l4 xl2 custom-1">content</div>
-            <div class="col s12 m6 l4 xl2 custom-1">content</div>
-            <div class="col s12 m6 l4 xl2 custom-1">content</div>
-            <div class="col s12 m6 l4 xl2 custom-1">content</div>
-        </div>
-        
-        <div class="row">
-            <div class="col s12 m8 custom-1">content</div>
-            <div class="col s12 m4 custom-1">content</div>
-            <div class="col s12 m4 custom-1">content</div>
-            <div class="col s12 m8 custom-1">content</div>
-        </div>
-    </div>
-
-    <!-- SHADOWS & DEPTH -->
-    <div class="container">
-        <h4>Shadows & Depth</h4>
-        <div class="row">
-            <div class="col s2">
-                <div class="custom-2"></div>
-            </div>
-            <div class="col s2">
-                <div class="z-depth-1 custom-2"></div>
-            </div>
-            <div class="col s2">
-                <div class="z-depth-2 custom-2"></div>
-            </div>
-            <div class="col s2">
-                <div class="z-depth-3 custom-2"></div>
-            </div>
-            <div class="col s2">
-                <div class="z-depth-4 custom-2"></div>
-            </div>
-            <div class="col s2">
-                <div class="z-depth-5 custom-2"></div>
-            </div>
-        </div>
-    </div>
-
-    <!-- CARDS -->
-    <div class="container">
-        <h2>Cards</h2>
-        <div class="row">
-            <div class="col s12 l6">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="img/curry.jpg" alt="curry">
-                        <a href="#" class="halfway-fab btn-floating large pink pulse">
-                            <i class="material-icons">favorite</i>
-                        </a>
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title">Mango & Chickpea Curry</span>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quis ad voluptas est quas sit natus totam, explicabo neque laudantium amet, sint consequuntur fuga fugit error debitis suscipit ex id!</p>
-                    </div>
-                    <div class="card-action">
-                        <a href="#">More details</a>
-                        <a href="#">View Ingredients</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 l6">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="img/pasta.jpg" alt="curry">
-                        <a href="#" class="halfway-fab btn-floating large pink pulse">
-                            <i class="material-icons">favorite</i>
-                        </a>
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title">Rainbow Pasta Salad</span>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quis ad voluptas est quas sit natus totam, explicabo neque laudantium amet, sint consequuntur fuga fugit error debitis suscipit ex id!</p>
-                    </div>
-                    <div class="card-action">
-                        <a href="#">More details</a>
-                        <a href="#">View Ingredients</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- COLLECTIONS -->
-    <div class="container">
-        <h2>Collections</h2>
-        <ul class="collection with-header">
-            <li class="collection-header"><h4>Customers</h4></li>
-            <li class="collection-item avatar">
-                <i class="material-icons circle blue">person</i>
-                <span class="title">John</span>
-                <p class="grey-text">Black Belt</p>
-                <a href="#" class="secondary-content">
-                    <i class="material-icons blue-text">email</i>
-                </a>
-            </li>
-            <li class="collection-item avatar">
-                <i class="material-icons circle blue">person</i>
-                <span class="title">Crystal</span>
-                <p class="grey-text">Blue Belt</p>
-                <a href="#" class="secondary-content">
-                    <i class="material-icons blue-text">email</i>
-                </a>
-            </li>
-            <li class="collection-item avatar">
-                <i class="material-icons circle blue">person</i>
-                <span class="title">Max</span>
-                <p class="grey-text">Yellow Belt</p>
-                <a href="#" class="secondary-content">
-                    <i class="material-icons blue-text">email</i>
-                </a>
-            </li>
-            <li class="collection-item avatar">
-                <i class="material-icons circle blue">person</i>
-                <span class="title">Ann</span>
-                <p class="grey-text">Brown Belt</p>
-                <a href="#" class="secondary-content">
-                    <i class="material-icons blue-text">email</i>
-                </a>
-            </li>
+          </li>
+          <li>
+            <a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-tooltip="This is Facebook">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-tooltip="This is Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
         </ul>
+        <ul class="sidenav grey lighten-2" id="mobile-menu">
+          <li><a href="#">Photo's</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- photo / grid -->
+  <section class="container section scrollspy" id="photos">
+    <div class="row">
+      <div class="col s12 l4">
+        <img src="img/portrait.jpg" alt="photo" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l6 offset-l1">
+        <h2 class="indigo-text text-darken-4">Portraits</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptas explicabo similique ratione voluptatem, et, consequuntur facilis ducimus adipisci at dicta iste eos accusantium repudiandae earum optio dignissimos nesciunt asperiores.</p>
+      </div>
     </div>
+    <div class="row">
+      <div class="col s12 l4 push-l7 offset-l1">
+        <img src="img/city.jpg" alt="photo" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l6 pull-l5 right-align offset-l1">
+        <h2 class="indigo-text text-darken-4">Cityscapes</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptas explicabo similique ratione voluptatem, et, consequuntur facilis ducimus adipisci at dicta iste eos accusantium repudiandae earum optio dignissimos nesciunt asperiores.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 l4">
+        <img src="img/nature.jpg" alt="photo" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l6 offset-l1">
+        <h2 class="indigo-text text-darken-4">Nature</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptas explicabo similique ratione voluptatem, et, consequuntur facilis ducimus adipisci at dicta iste eos accusantium repudiandae earum optio dignissimos nesciunt asperiores.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- MODALS -->
-    <div class="container">
-        <h2>Modals</h2>
+  <!-- parallax -->
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="img/street.jpg" alt="stars" class="responsive-img">
+    </div>
+  </div>
 
-        <a href="#terms" class="btn orange modal-trigger">Terms & Conditions</a>
-
-        <div class="modal" id="terms">
-            <div class="modal-content">
-                <h4>Term & Conditions</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate ut autem quae magnam eaque doloremque harum libero labore eos mollitia, unde provident molestiae eius ad accusamus voluptatem voluptatibus sequi praesentium?</p>
-            </div>
-            <div class="modal-footer">
-                <a href="#" class="modal-close btn orange">Agree & Close</a>
-            </div>
+  <!-- services / tabs -->
+  <section class="container section scrollspy" id="services">
+    <div class="row">
+      <div class="col s12 l4">
+        <h2 class="indigo-text text-darken-4">What I do...</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam facilis libero non, harum cupiditate, iusto quos hic blanditiis aperiam vitae optio voluptatum, totam ad doloremque amet dolorum voluptatem explicabo architecto!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, est eveniet tempore debitis, officiis aut id ullam, in illo explicabo nemo ut tenetur. Repudiandae, quas quos totam exercitationem doloremque magnam?</p>
+      </div>
+      <div class="col s12 l6 offset-l2">
+        <ul class="tabs">
+          <li class="tab col s6">
+            <a href="#photography" class="indigo-text text-darken-4">Photography</a>
+          </li>
+          <li class="tab col s6">
+            <a href="#editing" class="indigo-text text-darken-4">Editing</a>
+          </li>
+        </ul>
+        <div class="col s12" id="photography">
+          <p class="flow-text indigo-text text-darken-4">Photography</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis rerum sapiente ducimus nam veritatis repellat obcaecati, minima quisquam. Dolor explicabo voluptate architecto facilis voluptas, maiores tenetur aliquam ratione cum error.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dolores, at necessitatibus earum natus consequatur eius fuga aspernatur numquam temporibus, in eveniet deleniti sit culpa, voluptas iusto ad illo dignissimos?</p>
         </div>
+        <div class="col s12" id="editing">
+          <p class="flow-text indigo-text text-darken-4">Editing</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis rerum sapiente ducimus nam veritatis repellat obcaecati, minima quisquam. Dolor explicabo voluptate architecto facilis voluptas, maiores tenetur aliquam ratione cum error.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dolores, at necessitatibus earum natus consequatur eius fuga aspernatur numquam temporibus, in eveniet deleniti sit culpa, voluptas iusto ad illo dignissimos?</p>
+        </div>
+      </div>
     </div>
+  </section>
 
+  <!-- parallax -->
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="img/stars.jpg" alt="stars" class="responsive-img">
+    </div>
+  </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <!-- contact form -->
+  <section class="section container scrollspy" id="contact">
+    <div class="row">
+      <div class="col s12 l5">
+        <h2 class="indigo-text text-darken-4">Get In Touch</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem voluptatem, voluptate provident labore accusantium vitae, voluptatibus neque quas illo vero eius magnam asperiores, ullam quia corrupti earum animi libero eum!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quia deleniti ducimus illo sapiente dignissimos sint inventore eveniet dolor nisi! Quae voluptatum vero earum aut magnam nesciunt eveniet fugiat veniam?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur ex asperiores voluptate laborum quae ea fugit placeat praesentium vel beatae dolorem, sapiente odit nobis assumenda enim tenetur explicabo autem maxime!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem rerum esse quo adipisci, enim molestias alias, magnam ducimus optio inventore veritatis velit dolore culpa praesentium voluptate aliquam itaque tenetur distinctio.</p>
+      </div>
+      <div class="col s12 l5 offset-l2">
+        <form action="">
+          <div class="input-field">
+            <i class="material-icons prefix">email</i>
+            <input type="email" id="email">
+            <label for="email">Your Email</label>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix">message</i>
+            <textarea id="message" class="materialize-textarea"></textarea>
+            <label for="message">Your message</label>
+          </div>
+          <div class="input-field">
+            <input type="text" id="date" class="datepicker">
+            <label for="date">Choose a date</label>
+          </div>
+          <div class="input-field">
+            <p>Services required...</p>
+            <p>
+              <label>
+                <input type="checkbox">
+                <span>Photography</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox">
+                <span>Editing</span>
+              </label>
+            </p>
+          </div>
+          <div class="input-field center">
+            <button class="btn">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="footer-copyright grey darken-4">
+      <div class="container center-align">&copy; 2019 Photo</div>
+    </div>
+  </section>
 
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- footer -->
+  <footer class="page-footer grey darken-3">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 l6">
+          <h5>About Me</h5>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque dolorum necessitatibus similique perferendis beatae deleniti placeat et assumenda, adipisci aliquid praesentium unde vitae magnam! Tempora officiis optio voluptatum illum numquam.</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat alias ex vel est vero necessitatibus, pariatur esse qui inventore veniam, nobis, doloribus error vitae aspernatur deleniti beatae eius. Omnis, iure!</p>
+        </div>
+        <div class="col s12 l4 offset-l2">
+          <h5>Connect</h5>
+          <ul>
+            <li><a href="#" class="grey-text text-lighten-3">Facebook</a></li>
+            <li><a href="#" class="grey-text text-lighten-3">Twitter</a></li>
+            <li><a href="#" class="grey-text text-lighten-3">LinkedIn</a></li>
+            <li><a href="#" class="grey-text text-lighten-3">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-    <script>
-        $(document).ready(function() {
-            $('.sidenav').sidenav();
-            $('.modal').modal();
-        });
-    </script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+      $('.materialboxed').materialbox();
+      $('.parallax').parallax();
+      $('.tabs').tabs();
+      $('.datepicker').datepicker({
+        disableWeekends: true
+      });
+      $('.tooltipped').tooltip();
+      $('.scrollspy').scrollSpy();
+    });
+  </script>
 </body>
 </html>
